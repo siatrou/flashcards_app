@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1f2933;
+  background: #f5f7fa;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 24px 32px;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.app-main {
+  flex: 1;
+  padding: 32px;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.page h1 {
+  margin: 0 0 8px;
+}
+
+.page p {
+  margin: 0 0 24px;
+  color: #475569;
+}
+
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-button {
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button--study {
+  background: #16a34a;
+}
+
+.nav-button--quiz {
+  background: #dc2626;
+}
+
+.nav-button--stats {
+  background: #2563eb;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2);
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.category-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.category-pill {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  font-weight: 600;
+  color: #1e293b;
+}

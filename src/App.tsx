@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import CategorySelectionPage from "./pages/CategorySelectionPage";
 import QuizSelectionPage from "./pages/QuizSelectionPage";
 import StatsPage from "./pages/StatsPage";
+import StudyPage from "./pages/StudyPage";
 
 const App = () => {
   return (
@@ -16,7 +17,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/study" element={<CategorySelectionPage mode="study" />} />
+          <Route path="/study/:category" element={<StudyPage />} />
           <Route path="/quiz" element={<QuizSelectionPage />} />
+          <Route path="/quiz/:category" element={<QuizSelectionPage />} />
           <Route path="/stats" element={<StatsPage />} />
         </Routes>
       </main>
